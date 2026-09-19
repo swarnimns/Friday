@@ -1,0 +1,71 @@
+TOOLS:
+| Part             | We'll use                         | Why                                                     |
+| ---------------- | --------------------------------- | ------------------------------------------------------- |
+| 🐍 Language      | **Python**                        | Best fit for AI + Windows automation                    |
+| 🧠 Brain         | **Gemini API**                    | Strong LLM + native function/tool calling               |
+| 🎤 Speech → Text | **Whisper Turbo, local**          | Good accuracy, runs on your PC, no per-command API cost |
+| 🔊 Text → Speech | **TBD — we'll test options**      | Voice quality matters a lot                             |
+| 👂 Wake word     | **Porcupine**                     | Dedicated, lightweight, Windows/Python support          |
+| 🖥️ PC control    | **Python Windows libraries/APIs** | Lets our code actually operate the PC                   |
+| 🗃️ Memory        | **SQLite**                        | Simple local database                                   |
+| 🔔 Notifications | **Windows notifications**         | Native notifications                                    |
+| 🔧 AI ↔ actions  | **Gemini function calling**       | Lets Gemini choose our tools                            |
+| 🚀 Startup       | **Windows Startup**               | Simple and reliable initially                           |
+
+-------------------------------------------------------
+
+
+| Component     | Choice                     |
+| ------------- | -------------------------- |
+| Language      | **Python**                 |
+| LLM           | **Gemini API** initially   |
+| STT           | Whisper / another good STT |
+| TTS           | Good natural TTS           |
+| Wake word     | Dedicated wake-word system |
+| PC control    | Python + Windows APIs      |
+| Database      | SQLite                     |
+| Notifications | Windows notifications      |
+| Communication | Tool/function calling      |
+| Startup       | Windows startup/service    |
+----------------------------------------------
+👂 Ears        → STT (speech to Text)
+🧠 Brain       → LLM
+🗣️ Mouth       → TTS (Text to Speech)
+👂 Attention    → Wake word
+🖐️ Hands       → PC control / tools
+🗃️ Memory      → Database
+🔔 Notifications → Windows notifications
+🚀 Starts itself → Startup
+
+-----------------------------------------------------
+
+                         FRIDAY
+                           │
+              ┌────────────┴────────────┐
+              │                         │
+           INPUT                      OUTPUT
+              │                         │
+        🎤 Microphone                🔊 TTS
+              │                         ▲
+              ▼                         │
+        Wake Word                       │
+              │                         │
+              ▼                         │
+             STT                        │
+              │                         │
+              ▼                         │
+          ┌────────┐                     │
+          │ GEMINI │ 🧠                 │
+          └───┬────┘                     │
+              │                          │
+              ▼                          │
+       Tool / Function Calling           │
+              │                          │
+       ┌──────┼────────┐                 │
+       ▼      ▼        ▼                 │
+      PC    Memory    Internet            │
+       │      │        │                 │
+       └──────┼────────┘                 │
+              │                          │
+              ▼                          │
+          Result ────────────────────────┘

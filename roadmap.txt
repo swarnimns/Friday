@@ -1,0 +1,89 @@
+                    🎤 YOU SPEAK
+                         │
+                         ▼
+                ┌─────────────────┐
+                │   Wake Word     │
+                │  "Hey Friday"   │
+                └────────┬────────┘
+                         │
+                         ▼
+                ┌─────────────────┐
+                │ Speech-to-Text  │
+                │      (STT)      │
+                └────────┬────────┘
+                         │
+                         ▼
+              ┌──────────────────────┐
+              │        LLM           │
+              │   🧠 THE BRAIN       │
+              │      Gemini          │
+              └──────────┬───────────┘
+                         │
+                 decides what to do
+                         │
+                         ▼
+              ┌──────────────────────┐
+              │    TOOL / ACTION     │
+              │       SYSTEM         │
+              └──────────┬───────────┘
+                         │
+          ┌──────────────┼───────────────┐
+          ▼              ▼               ▼
+      Open apps      Screenshot       Todo/Reminder
+          │              │               │
+          ▼              ▼               ▼
+      Windows        Windows API       Database
+                         │
+                         ▼
+                 ┌─────────────────┐
+                 │   TTS / Voice   │
+                 └────────┬────────┘
+                          ▼
+                     🔊 RESPONSE
+
+
+This can become REALLY powerful
+Eventually you could have:
+
+🖥️ PC tools
+open_app()
+close_app()
+screenshot()
+lock_pc()
+shutdown()
+restart()
+volume_up()
+volume_down()
+set_volume()
+
+🌐 Internet tools
+search_web()
+open_website()
+search_youtube()
+search_google()
+
+📁 Computer tools
+create_file()
+find_file()
+open_file()
+move_file()
+delete_file()
+
+📝 Personal productivity
+add_todo()
+remove_todo()
+list_todos()
+create_reminder()
+create_note()
+read_notes()
+
+🧠 Information
+get_time()
+get_weather()
+get_system_status()
+
+And eventually:
+computer_vision()
+so Friday can actually understand 
+what's on your screen.
+
