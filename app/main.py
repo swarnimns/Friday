@@ -1,5 +1,6 @@
-from tools.browser import open_website
+from brain.gemini import ask_gemini
 
-result = open_website("https://youtube.com")
+
+result = ask_gemini("Hello Gemini. Introduce yourself in one sentence.")
 
 print(result)
