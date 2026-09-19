@@ -1,5 +1,5 @@
-from tools.screenshot import take_screenshot
+from tools.browser import open_website
 
-result = take_screenshot()
+result = open_website("https://youtube.com")
 
 print(result)
